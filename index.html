@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <script src="Gasto.js"></script>
+    <script src="index.js"></script>
+    <title>Practica 4</title>
+</head>
+<body>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Practica 4</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+        <h1>Presupuesto</h1>
+        <ion-list>
+            <ion-item>
+              <ion-input label="Tipo de Gasto" type="text" id="gasto"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input label="Monto" type="number" id="monto"></ion-input>
+            </ion-item>
+            
+        </ion-list>
+        <ion-button onclick="guardar()" fill="outline">Guardar</ion-button>
+        <ion-button onclick="verGuardados()" fill="outline">Ver guardados</ion-button>
+        <div class="contendor">
+            <ul id="contenedor">
+
+            </ul>
+            <div id="total"></div>
+        </div>
+    </ion-content>
+</body>
+
+</html>
